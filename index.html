@@ -10,16 +10,16 @@
 
      <form>
         Message <br>
-        <textarea rows = "5" cols = "50" id="messageField"></textarea>
-	<button onclick ="save1()"> Save </button>
+        <textarea rows = "5" cols = "50" placeholder="Message" id="messageField"></textarea>
+	<button id="btnSave"> save </button> <br>
      </form>
      
 	
 	<input type="text" placeholder="Text" id="textField">
-        <button onclick ="save2()"> Save </button> <br><br>
+        <button onclick ="saveText()"> Save </button> <br><br>
 	  
-        <textarea></textarea>
-        <button id="btnSave"> save </button> <br>
+        
+        
 
 
 <script>
@@ -35,9 +35,9 @@ const downloadToFile = (content, filename, contentType) => {
 };
 
 document.querySelector('#btnSave').addEventListener('click', () => {
-  const textArea = document.querySelector('textarea');
+  const textArea = document.querySelector('#messageField');
   
-  downloadToFile(textArea.value, 'my-new-file.txt', 'text/plain');
+  downloadToFile(textArea.value, 'new-file.txt', 'text/plain');
 });
 </script>
 
