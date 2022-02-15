@@ -3,17 +3,23 @@
 <head>
     <title> File </title>
 </head>
+	
 <p> Save as text </p>
   
   <body>
 
-  <p> Save as text </p>
+     <form>
+        Message <br>
+        <textarea rows = "5" cols = "50" id="messageField3">
+        </textarea>  
+	<button onclick ="save1()"> Save </button>
+     </form>
 	
-	<input type="text" placeholder="Name" id="nameField">
-         <button onclick = "saveContactInfo()"> Save </button> <br>
+	<input type="text" placeholder="Text" id="textField">
+        <button onclick ="save2()"> Save </button> <br><br>
 	  
-  <textarea></textarea>
-  <button id="btnSave">save</button> <br>
+        <textarea></textarea>
+        <button id="btnSave"> save </button> <br>
 
 
 <script>
